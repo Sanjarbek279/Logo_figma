@@ -1,0 +1,121 @@
+#Recipe {
+  display: flex;
+  padding: 64px 110px 56px 114px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  align-self: stretch;
+  border-radius: 12px;
+  background: var(--text-text-invert, #f4f4f4);
+
+  .recipe_img-left {
+    img {
+      display: none;
+    }
+  }
+  .recipe_text-right {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    h3 {
+      color: var(--text-text-secondary, #2b2b2b);
+      text-align: center;
+      font-size: 39.7px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 47px;
+    }
+    .two_text {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      gap: 69px;
+      .left_text {
+        padding-top: 41px;
+        img {
+          display: inline-flex;
+          padding: 14px 16px;
+          align-items: flex-start;
+          gap: 16px;
+          border-radius: 9px;
+          background: var(--color-brand-peach, #ebbfae);
+        }
+        p {
+          padding-top: 20px;
+          color: var(--text-text-primary, #2a2a2a);
+          text-align: center;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 840px){
+  #Recipe {
+    .recipe_text-right {
+      h3 {
+        display: flex;
+        height: 99px;
+        padding-top: 11px;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 16px;
+      }
+      .two_text{
+        display: flex;
+        flex-direction: row;
+        .left_text{
+          max-width: 237px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width:1440px){
+  #Recipe{
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    align-items: start;
+    justify-content: start;
+    gap: 237px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    .recipe_img-left{
+      img{
+        display: flex;
+      }
+    }
+    .recipe_text-right{
+      text-align: start;
+      align-items: start;
+      h3{
+        text-align: start;
+        align-items: start;
+      }
+      .two_text{
+        .left_text{
+          text-align: start;
+          align-items: start;
+      img{
+        align-items: start;
+        text-align: start;
+      }
+      p{
+        text-align: start;
+      }
+    }
+  }
+    }
+
+  }
+  
+}

@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+img {
+    max-width: 100%;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  button{
+    cursor: pointer;
+    border: none;
+  }
+  .container{
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  @media screen and (min-width:1440px) {
+    .container{
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+  }
